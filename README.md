@@ -22,8 +22,9 @@ python main.py --root_path '/data/' \
                --is_scale \
                --n_epochs 100000 \
                --batch_size 64
+```
 and for test 
-
+```python
 python main.py --root_path '/data/' \
                --n_classes [number of classes] \
                --is_test \
