@@ -6,7 +6,11 @@ The network model implementations are copied from the repository [3D-ResNets-Pyt
 In "data" folder, there is a small example dataset to demonstrate what kind of data the code uses and how to create a dataset.
 Steps to run the code
 1. Create .csv files that contains information of train, validation and test splits of the dataset:
-python createCSV.py --data_dir data/ --perc_train 50 --perc_test 25 --per_val 25
+
+```python
+python createCSV.py --data_dir data/ --perc_train 50 --perc_test 25 --per_val 25.
+```
+
 In the "data/" folder, where the dataset exits, this code will create {train, val, test}.csv files and info_csv.xml that contains some information related to the dataset such as mean and standard derivation to normalize data later.
 2. Then to run the training you can run by setting some parameters:
 python main.py --root_path '/data/' \
