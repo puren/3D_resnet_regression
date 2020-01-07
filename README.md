@@ -13,6 +13,8 @@ python createCSV.py --data_dir data/ --perc_train 50 --perc_test 25 --per_val 25
 
 In the "data/" folder, where the dataset exits, this code will create {train, val, test}.csv files and info_csv.xml that contains some information related to the dataset such as mean and standard derivation to normalize data later.
 2. Then to run the training you can run by setting some parameters:
+```python
+
 python main.py --root_path '/data/' \
                --n_classes [number of classes] \
                --is_train \
@@ -21,6 +23,7 @@ python main.py --root_path '/data/' \
                --n_epochs 100000 \
                --batch_size 64
 and for test 
+
 python main.py --root_path '/data/' \
                --n_classes [number of classes] \
                --is_test \
@@ -28,6 +31,7 @@ python main.py --root_path '/data/' \
                --is_scale \
                --n_epochs 100000 \
                --batch_size 64               
+```
  
 You can check for more parameter options in opts.py file and in [the repository](https://github.com/kenshohara/3D-ResNets-PyTorch).
 Check data/results folder for saved checkpoints. 
